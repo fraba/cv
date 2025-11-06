@@ -1,13 +1,41 @@
 % !TEX program = lualatex
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 \moderncvtheme[black]{classic}
 
 \usepackage{fontspec}
 
-\usepackage[scale=0.75, margin=1.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\usepackage{setspace}
+
+\usepackage[many]{tcolorbox}
+
+\definecolor{boxmain}{HTML}{f2e9e9}    % setting main color to be used
+\definecolor{boxsub}{HTML}{cde4ff}     % setting sub color to be used
+
+\tcbset{
+    sharp corners,
+    colback = white,
+    before skip = 0.2cm,    % add extra space before the box
+    after skip = 0.5cm      % add extra space after the box
+}                           % setting global options for tcolorbox
+
+\newtcolorbox{boxH}{
+    colback = boxmain, 
+    colframe = black, 
+    rounded corners,
+    breakable,
+    arc = 5pt 
+    boxrule = 1pt, 
+}
+
+
+\usepackage[scale=0.75, margin=2cm]{geometry}
 
 \usepackage{academicons}
+\usepackage{fontawesome5}
 
 \usepackage[style=apa,backend=biber]{biblatex}
 
@@ -62,49 +90,52 @@
 
 \section{Academic positions}
 
-\cventry{Oct 2024  - Present}{Deputy director of the \href{https://www.sydney.edu.au/arts/our-research/centres-institutes-and-groups/centre-for-ai-trust-and-governance.html}{Centre for AI, Trust and Governance}}{Faculty of Arts and Social Sciences, University of Sydney}{Sydney,
+\vspace{1em}
+
+\begin{boxH}
+I have \textbf{eight years of research experience}, \textbf{more than seven years of teaching and course coordination at undergraduate and postgraduate levels}, and \textbf{five years of governance experience}, including \textbf{one year in senior leadership roles}.
+\end{boxH}
+
+\vspace{1em}
+
+% \cventry{Jan 2026 - }{Senior Lecturer in Data Analytics in the Social Sciences}{School of Social and Political Sciences, University of Sydney}{Sydney, Australia}{}{}
+
+% \cventry{Jan 2026  - }{Co-director of the \href{https://www.sydney.edu.au/arts/our-research/centres-institutes-and-groups/centre-for-ai-trust-and-governance.html}{Centre for AI, Trust and Governance}}{Faculty of Arts and Social Sciences, University of Sydney}{Sydney,
   Australia}{}{}
 
-\cventry{Jan 2023 - Present}{Lecturer in Data Analytics in the Social Sciences}{School
+\cventry{Jan 2025  - }{Director of the \href{https://computational-social-science.sydney.edu.au/}{Computational Social Science Lab}}{University of Sydney}{Sydney,
+  Australia}{}{Institutionalising computational methodologies across the Faculty of Arts and Social Sciences; designing and leading a regular program of workshops on natural language processing, digital trace data analysis, and computational text analysis; fostering interdisciplinary collaborations between social scientists and computer scientists; mentoring early-career researchers in computational methods; establishing partnerships with national and international research centers; providing leadership in the development and application of digital research methodologies.}
+  
+
+\cventry{Oct 2024  - Dec 2025}{Deputy director of the \href{https://www.sydney.edu.au/arts/our-research/centres-institutes-and-groups/centre-for-ai-trust-and-governance.html}{Centre for AI, Trust and Governance}}{Faculty of Arts and Social Sciences, University of Sydney}{Sydney,
+  Australia}{}{Leading the strategic development of interdisciplinary research on AI governance, trust, and policy; defining six core research themes and directing the Centre's official launch; establishing international partnerships with institutions including the Schwartz Reisman Institute at the University of Toronto; advancing collaborative grant applications; fostering productive dialogue between HASS and STEM traditions to strengthen institutional research capacity.}
+
+
+\cventry{Jan 2023 - Dec 2025}{Lecturer in Data Analytics in the Social Sciences}{School
   of Social and Political Sciences, University of Sydney}{Sydney,
-  Australia}{}{
-I am responsible for conducting academic research, designing, coordinating and teaching university courses at undergraduate and postgraduate levels; supervising research students; recruiting and managing teaching and research assistants; participating in academic management and all the activities of my Faculty. \\
-Since January 2023, I have been responsible for designing, coordinating and teaching the undergraduate courses of \textbf{Digital Politics} GOVT3901 and \textbf{Data Analytics in the Social Sciences} (with R) SSPS4102 (2023-2024) and the postgraduate courses of \textbf{Research Design} GOVT6139 (2023-204) and \textbf{Data Analytics for Social Research} (with R) SSPS6006 (2024). \\
-Between 2023 and 2024, I have been a member of The University of Sydney's \textbf{Human Research Ethics Committee Arts and Social Sciences Low-Risk Sub-Committee}.\\
-Since 2023, I have been a \textbf{Student Advisor} for the Faculty of Arts and Social Sciences of the University of Sydney. \\
-This position also entailed a component of engagement and partnership, including liaisons with internal and external stakeholders, as well as a significant research commitment. \\
-More details of teaching and research activities are listed below.
-}
+  Australia}{}{Designing, coordinating and teaching undergraduate courses in Digital Politics and Data Analytics in the Social Sciences (with R) and postgraduate courses in Research Design and Data Analytics for Social Research; supervising Honours, Masters and PhD students; recruiting and managing teaching and research assistants; serving on the Human Research Ethics Committee Arts and Social Sciences Low-Risk Sub-Committee (2023-2024); providing academic advising to students as Faculty Student Advisor; engaging with internal and external stakeholders on computational social science partnerships; conducting research on digital political participation and computational methods while maintaining teaching excellence evidenced by highest year-on-year increase in student satisfaction in the School.}
 
-\cventry{Mar 2019 - Jan 2023}{Lecturer in Digital and Social Media}{School
-  of Communication, University of Technology Sydney}{Sydney,
-  Australia}{}{
-I worked as a Digital and Social Media Lecturer at the University of Technology Sydney for three years. In this role, I had teaching responsibilities, primarily as a faculty member in the \textbf{Bachelor of Communication Digital and Social Media} program. Additionally, I was involved in research and supervision of master's and doctoral students. \\
-Activities carried out in this role include design, coordination, teaching, and healing supervisory responsibility for the teaching assistant team for the following courses: \textbf{Digital Media Industries} 54061 (2019 and 2020); \textbf{Code as Literacy, Commodity, Infrastructure} 54063 (2019, 2020, and 2021); \textbf{Digital Media: Marketing, Metrics, and Data} 54061 (2021); \textbf{Working with Data and Code} 52685 (2022);  \textbf{Digital Media Metrics} 52682 (2022), \textbf{Application Implementation with Microsoft Dynamics} 570002 (2022) (details of teaching activities are listed below). \\
-This position also entailed a component of engagement and partnership, including liaisons with internal and external stakeholders, as well as a significant research commitment, as described in more detail below.
-}
+\cventry{Mar 2019 - Jan 2023}{Lecturer in Digital and Social Media}{School of Communication, University of Technology Sydney}{Sydney, Australia}{}{Designing, coordinating and teaching courses in the Bachelor of Communication Digital and Social Media program, including Digital Media Industries, Code as Literacy/Commodity/Infrastructure, Digital Media Marketing/Metrics/Data, and Working with Data and Code; supervising Masters and PhD students; recruiting and managing teaching assistant teams; developing innovative curriculum integrating programming, data analytics, and digital media studies; engaging with industry and government stakeholders on digital transformation projects; conducting research on platform politics, computational methods, and digital political communication; contributing to faculty governance and strategic planning in digital media education.}
 
-\cventry{Jan 2018 - Mar 2019}{Postdoctoral Fellow in Digital
-    Media Methods}{Department of Media and Communications, the
-    University of Sydney}{Sydney, Australia}{}{
-In this role, I had primarily research responsibilities, which involved preparing a monograph. Additionally, I was responsible for organizing training sessions on the application of digital methods within the department and the university, benefiting colleagues and students across a range of different disciplines. \\
-I was also responsible for designing, coordinating and teaching the postgraduate course of \textbf{Public opinion, policy and the public sphere} MECO6913 (2018).
-}
+\cventry{Jan 2018 - Mar 2019}{Postdoctoral Fellow in Digital Media Methods}{Department of Media and Communications, the University of Sydney}{Sydney, Australia}{}{Conducting research on digital methods in political communication and public opinion for monograph development; designing and delivering interdisciplinary training workshops on computational methods and digital data collection for faculty and students across humanities and social sciences; establishing foundational infrastructure for digital methods research within the department; designing, coordinating and teaching the postgraduate course Public Opinion, Policy and the Public Sphere; contributing to the development of digital research capacity and methodological innovation across the university.}
 
 \vspace{.5cm}
 
 \section{Non-academic positions}
 
-\cventry{Aug 2017 - Jan 2018}{Survey consultant}{Cambodia
-    Development Resource Institute (CDRI)}{Phnom Penh, Cambodia}{}{As an external consultant for the Cambodia Development Resource Institute (CDRI) in Phnom Penh, Cambodia, I was responsible for organizing a survey of the Cambodian population regarding the use of new communication technologies and analysing the collected data.}
+\vspace{1em}
 
-\cventry{Jun 2012 - Mar 2013}{Survey consultant}{Australian
-    Centre for International Agricultural Research (ACIAR)}{Canberra,
-    Australia}{}{As an external consultant for the Australian Centre for International Agricultural Research (ACIAR), I was responsible for conducting an impact evaluation of an Australian government development aid program in Afghanistan. This involved establishing the evaluation methodology, designing the questionnaire, negotiating with local partners, and collaborating on data analysis.}
+\begin{boxH}
+I have \textbf{five years of applied research and program management experience in international development}, including \textbf{survey design} and \textbf{quantitative evaluation} for government organisations, \textbf{large-scale project management}, and \textbf{field experience} in fragile states.
+\end{boxH}
+
+\vspace{1em}
+
+\cventry{Aug 2017 - Jan 2018}{Survey consultant}{Cambodia Development Resource Institute (CDRI)}{Phnom Penh, Cambodia}{}{Designing and implementing national survey research on communication technology adoption and digital media use among Cambodian population; developing sampling methodology and survey instruments for large-scale quantitative data collection; managing fieldwork coordination and data quality assurance; conducting statistical analysis of survey data; producing research reports on patterns of technology adoption and digital communication practices for policy stakeholders and development organizations.}
+
+\cventry{Jun 2012 - Mar 2013}{Survey consultant}{Australian Centre for International Agricultural Research (ACIAR)}{Canberra, Australia}{}{Designing and conducting impact evaluation research for Australian government development aid program in Afghanistan; establishing evaluation methodology and developing survey instruments for program assessment; coordinating with local research partners and implementing agencies in challenging field environments; managing cross-cultural research collaboration and fieldwork logistics; conducting quantitative data analysis and interpreting evaluation findings; producing research reports on program effectiveness for government and international development stakeholders.}
   
-\cventry{Mar 2011 - Mar 2012}{National Program
-    Manager}{Mission of Assistance for the Development of
-    Rural Economies in Afghanistan (MADERA)}{Kabul, Afghanistan}{}{I was responsible for managing a budget of US\$ 2.1 million and a staff of 200 people while monitoring the implementation of the National Solidarity Program in hundreds of communities distributed in four provinces of Afghanistan.}
+\cventry{Mar 2011 - Mar 2012}{National Program Manager}{Mission of Assistance for the Development of Rural Economies in Afghanistan (MADERA)}{Kabul, Afghanistan}{}{Managing implementation of the National Solidarity Program across four Afghan provinces; overseeing operational budget of US\$2.1 million and supervising staff of 200; monitoring program delivery and community development initiatives in hundreds of rural communities; coordinating with government ministries, international donors, and local implementing partners; ensuring program compliance, accountability and reporting standards; managing complex logistics, stakeholder relationships and field operations in challenging security environment.}
 
 \cventry{Feb 2009 - Feb 2010}{Specialist in Business Development}{Food and Agriculture Organization (FAO) of the United Nations}{San Marcos, Guatemala}{}{}.
 
@@ -129,264 +160,41 @@ I was also responsible for designing, coordinating and teaching the postgraduate
 \cventry{Dec 2004}{Bachelor Degree in International Studies (1st
   Cycle)}{University of Turin}{Turin, Italy}{}{}
 
-\section{Awards and prizes}
-
-\cvline{Jul 2024}{Commendations for Teaching Excellence. Awarded by the School of Social and Political Sciences at the University of Sydney.}
-
-\cvline{Nov 2023}{\emph{Teaching Award (Teaching Innovation)}. Awarded by the Faculty of Arts and Social Sciences at the University of Sydney.}
-
-\cvline{Sep 2018}{\emph{The Internet, Policy \& Politics Conference Best
-Paper Prize}. Awarded by the Oxford Internet Institute of the
-University of Oxford.}
-
-\cvline{Mar 2015}{\emph{Berlin Doctoral Fellowship}. Awarded by the
-  Faculty of Arts and Social Sciences at the University of Sydney}.
-
-\cvline{May 2013}{\emph{Full PhD Scholarship - Australian Postgraduate
-    Award}. Awarded in by the University of Sydney.}
-
-\cvline{2011}{\emph{Top 3\% Award}. Awarded by Maastricht University}.
-
-\cvline{2005}{\emph{SEN Coimbra Group Grant}. Awarded by the
-  University of Pavia}.
-
-\cvline{2003}{\emph{Erasmus Scholarship}. Awarded by the University of
-  Turin}.
-
-\section{Teaching}
-
- \cvlistitem{I have had formal responsibilities as a university teacher in Australia for \textbf{11 years}.} 
-\cvlistitem{My teaching experience in \textbf{digital media} and \textbf{quantitative methods} includes \textbf{statistical and data analysis}, \textbf{digital methods}, \textbf{research methods}, \textbf{data visualisation (Tableau and R)}, \textbf{network analysis}, \textbf{natural language processing}, and \textbf{coding} (\textbf{Python} and \textbf{R}) delivered to diverse audiences, including undergraduate, postgraduate and research students in the Faculty of Arts and Social Sciences but also academics and professionals.}
-\cvlistitem{I have experience \textbf{coordinating large courses} (up to 300 students) and recruiting, training and supervising teaching assistants. My coordinating responsibilities have included \textbf{managing teaching staff}, \textbf{marking}, \textbf{recruiting students}, \textbf{providing pastoral care for students}, and defending academic integrity against plagiarism and cheating.}
-
-\cvlistitem{I have achieved the Italian scientific qualification ("Abilitazione Scientifica Nazionale") as associate professor in the Italian higher education system in the call 2021/2023 (valid until 03/10/2033) for the disciplinary fields of \textbf{14/A2 - Political science} and \textbf{14/C2 - Sociology of culture and communication}.}
-
-\subsection{Undergraduate course coordinator}
-
-\cvline{2023 - Present}{\textbf{Digital Politics} GOVT3901. Discipline of Government and International Relations, The University
-  of Sydney. https://www.sydney.edu.au/units/GOVT3901}
-
-\cvline{2023 - Present}{\textbf{Data Analytics in the Social Sciences} (with R) SSPS4102. School of Social and Political Sciences, The University
-  of Sydney. https://www.sydney.edu.au/units/SSPS4102}
-
-\cvline{2021 - 2022}{\textbf{Working with Data and Code} 52685. School of Communication, University of Technology
-Sydney. https://handbook.uts.edu.au/subjects/52685}
-
-\cvline{2022}{\textbf{Digital Media Metrics} 52682. School of Communication, University of Technology
-  Sydney. https://handbook.uts.edu.au/subjects/52682}
-
-\cvline{2021}{\textbf{Digital Media: Marketing, Metrics and Data } 54061. School of Communication, University of Technology
-  Sydney.}
-
-\cvline{2019 - 2020}{\textbf{Digital Media Industries} 54005. School
-  of Communication, University of Technology Sydney.}
-   
-\subsection{Postgraduate course coordinator}
-
-\cvline{2024 - Present}{\textbf{Data Analytics for Social Research} SSPS6006. School of Social and Political Sciences, The University of Sydney. https://www.sydney.edu.au/units/SSPS6006}
-
-\cvline{2023 - Present}{\textbf{Research Design} GOVT6139. Discipline of Government and
-  International Relations, School of Social and Political Sciences,
-  The University of Sydney. https://www.sydney.edu.au/units/GOVT6139}
-
-\cvline{2022}{\textbf{Application Implementation with Microsoft Dynamics} 570002. School of Communication, University of Technology
-Sydney. https://handbook.uts.edu.au/subjects/details/570002}
-
-\cvline{2018}{\textbf{Public opinion, policy and the public
-    sphere} MECO6913. Department of Media and Communications,
-  the University of Sydney. https://www.sydney.edu.au/units/MECO6913}
-
-\subsection{Workshops}
-
-\cvline{Jul 2022}{\textbf{(The art of) text mining and analysis}.
-  Winter School Training Session - ANZCA. University of Canberra. https://fraba.github.io/2022-ANZCA-workshop-The-art-of-text-analysis/}
-
-\cvline{Jul 2021}{\textbf{How to do social media data analysis using
-    Tableau} (honours). School of Communication, University of Technology Sydney}
-
-\cvline{Dec 2018}{\textbf{Topic Models in R}. DH Downunder 2018 summer
-  school, Western Sydney University and the University of Sydney. https://digital-methods-sydney.github.io/ws-201812/}
-
-\cvline{Jun 2018}{\textbf{Digital methods workshop: Social network
-    analysis, Twitter data collection, text analysis and the R
-    software}. Department of Media and Communications, the University
-  of Sydney. https://digital-methods-sydney.github.io/ws-201806/}
-
-\cvline{Nov - Dec 2016}{\textbf{Digital media methods: Applications of R software and RStudio to social research}. Department of Media and Communications, the University
-  of
-  Sydney. \url{https://fraba.github.io/digital_media_methods_sydney/}}
-
-\subsection{Supervision of research students}
-
-\cvlistitem{I successfully completed the supervision of \textbf{four research students (Honours Thesis)} and one PhD student. I am currently supervising five PhD students.}
-
-% \cvlistitem{I was the primary supervisor of the \textbf{PhD student} Veronica ann Alwan (project titled: "Digital Rights in the MENA Region: Threats, Limitations and Impact") between 2021 and 2023 as faculty of the School of Communication at the University of Technology Sydney (while I am currently an external supervisor). In addition to supervising the project, I also supported the development and preparation of the student’s research proposal for the PhD program.} 
-
-% \cvlistitem{I supervised the international \textbf{PhD student} Fungai Machirori (project titled: “New Media and Contemporary Forms of Communications in Sub-saharan Africa: A Comparative Analysis of Kenya and Zimbabwe”) between 2019 and 2023 as faculty of the School of Communication a the University of Technology Sydney.}
-
-\subsection{Guest lecturer}
-
-\cvline{2025} {\textbf{Philosophy of Social Science Research} SSPS4402. School of Social and Political Sciences, University of Sydney.}
-
-\cvline{2024} {\textbf{Contemporary Issues in Pols and Int Relations II} GOVT2901. Discipline of Government and International Relations, University of Sydney.}
-
-\cvline{2023 - Present}{\textbf{Researching Digital Cultures} ARIN3620. Discipline of Media and Communications, University of Sydney}
-
-\cvline{2023 - Present}{\textbf{Research Methods} MECO4114. Discipline of Media and Communications, University of Sydney}
-
-
-\cvline{Sep 2022}{\textbf{Political Ideas and Change} 52673. School of Communication, University of Technology Sydney}
-
-\cvline{Sep 2021}{\textbf{Political Ideas and Change} 52673. School of Communication, University of Technology Sydney}
-
-\cvline{Sep 2018}{\textbf{Digital Tools for the Humanities} LNGS2628. Department of Linguistics, University of Sydney}
-
-\cvline{May 2017}{\textbf{Political analysis} GOVT2991. Department of Government and International Relations, University of Sydney}
-
-\cvline{Sep 2017}{\textbf{Introduction to Political Science} GOVT1104. Department of Government and International Relations, University of Sydney}
-
-\cvline{Sep 2017}{\textbf{Digital Politics} GOVT3901. Department of Government and International Relations, University of Sydney}
-
-\subsection{Teaching assistant roles}
-
-%---------------------------------------------------------
-
-\cvline{2019 - 2021}{\textbf{Understanding Digital Audiences} 54060. School of Communication, University of Technology Sydney}  
-\cvline{2017}{\textbf{Political Analysis} GOVT2991. Department of Government and International Relations, University of Sydney}
-\cvline{2017}{\textbf{Introduction to Political Science} GOVT1104. Department of Government and International Relations, University of Sydney}
-\cvline{2014}{\textbf{Human Rights and
-        Australian Politics} GOVT2111. Department of Government and International Relations, University of Sydney)}
-
 \section{Research}
 
-\subsection{Collaborations}
+\begin{boxH}
 
-\cvlistitem{Since 2025, I am director of the \textbf{\href{https://computational-social-science.sydney.edu.au/people/}{Computational Social Science Lab}} at the University of Sydney.}
+\begin{itemize}
 
-\cvlistitem{Since 2023, I am a \textbf{chief investigator} in a research project funded (\textbf{AU\$ 500,000}) by the Commonwealth of Australia (through the Department of Defence) and the NSW government.}
+\item I have \textbf{eight years of experience as an academic researcher} in \textbf{computational social science}, \textbf{digital political communication}, and \textbf{platform governance}, combining rigorous quantitative methods with substantive questions about how \textbf{digital technologies reshape democratic participation}.
 
-\cvlistitem{Between 2021 and 2022, I was a member of the \textbf{Technology, Media and Strategy Research Group} of the Faculty of Arts and Social Sciences at the University of Technology Sydney.}
+\item I have secured over \textbf{AU\$672,000} in competitive research funding as Chief Investigator.
 
-\cvlistitem{Between 2021 and 2022, I was a member of the \textbf{Faculty Research Committee} of the Faculty of Arts and Social Sciences at the University of Technology Sydney.}
+\item My research integrates \textbf{computational methods} (\textbf{network analysis}, \textbf{natural language processing}, \textbf{spatial analysis}) with traditional social science approaches to examine how \textbf{digital platforms} and \textbf{AI technologies} reshape \textbf{political participation}, \textbf{misinformation dynamics}, and \textbf{democratic resilience} across diverse political contexts.
 
-\cvlistitem{In 2021, I was a chief investigator in the project "The dynamics of disinformation across traditional and social media", funded (\textbf{AU\$ 20,000}) with a competitive grant by the Faculty of Engineering and Information Technology of the University of Technology Sydney.}
+\item My publication record includes \textbf{14 peer-reviewed journal articles} (predominantly in Q1 journals), \textbf{2 books}, and \textbf{11 news articles}, complemented by \textbf{41 invited presentations at academic conferences and research seminars} and \textbf{21 media appearances}, demonstrating both scholarly impact and commitment to public engagement and knowledge translation.
 
-\cvlistitem{In 2020, I was a \textbf{chief investigator} in the research project "Mapping and countering the diffusion of hate speech across social media", funded by \textbf{Facebook (AU\$ 87,767)} with a competitive grant under the Content Policy Research Initiative.}
+\item I actively contribute to policy development through \textbf{government consultations} on \textbf{AI regulation}, expert participation in technology policy roundtables, and \textbf{media commentary} translating research into public discourse.
 
-\cvlistitem{Between 2019 and 2020, as the \textbf{principal investigator} of the project "Studies on opinion diffusion and polarisation online, mixing an ethnographic approach with quantitative methods based on computational modelling of behaviour," funded with a competitive grant of \textbf{AU\$ 20,000} by the Faculty of Engineering and Information Technology at the University of Technology Sydney, \textbf{I selected and then led the research team}.}
+\end{itemize}
 
-\cvlistitem{In 2017, I was part of the research team of the "\textbf{Digital Rights} and Governance in Australia and Asia" project, which received funding through a competitive grant from the University of Sydney under the Sydney Research Excellence Initiative. I actively participated in the research activities of the University of Sydney's research group, and in my role, I contributed to organising an international workshop, which took place on 18 August 2017.}
+\end{boxH}
 
-\subsection{Consultations}
+\subsection{\hspace{-2.5cm}External grants}
 
-\cvlistitem{In 2023, I was invited to co-author and submit a response to the Australian Government Department of Industry, Science and Resources on the \textbf{Safe and Responsible AI in Australia Discussion Paper}.}
+\vspace{.5em}
 
-\cvlistitem{In 2021, I participated as expert to the \textbf{Consultation Roundtable for COVID Data Access Mandate} organised by Responsible Technology Australia.}
-
-\cvlistitem{As a social researcher, I have collaborated as an external consultant with government agencies in two countries (\textbf{Australia} and \textbf{Cambodia}), bringing my expertise in survey design and quantitative analysis. For the Australian government, I designed and implemented a \textbf{nationwide} survey in \textbf{Afghanistan}. The survey was successfully administered in difficult conditions and resulted in an impact assessment exercise based on the data collected in the field. In \textbf{Cambodia}, I worked for a government agency to design a nationwide survey on the use of Internet technologies by the general population. In addition to the survey design, I was responsible for training the local staff to administer the survey and quantitatively analyse the data with statistical software.}  
-
-\cvline{Citations:}{396 (\href{https://scholar.google.com.au/citations?user=T_TftJUAAAAJ}{Google Scholar}); 163
-(\href{https://www.scopus.com/authid/detail.uri?authorId=57057661400}{Scopus});
-118 (\href{https://www.webofscience.com/wos/author/record/AGN-9443-2022}{Web of Science})}
-\cvline{H-index:}{9	(\href{https://scholar.google.com.au/citations?user=T_TftJUAAAAJ}{Google Scholar}); 
-5 (\href{https://www.scopus.com/authid/detail.uri?authorId=57057661400}{Scopus});
-4 (\href{https://www.webofscience.com/wos/author/record/AGN-9443-2022}{Web of Science})}
-
-\subsection{Publications}
-
-\subsubsection{Articles published in refereed journals}
-
-\cvlistitem{\fullcite{marollaAffordingFragmentedAudiences2025} {\aiOpenAccess} \href{https://doi.org/10.7910/DVN/MHLAOT}{\aiOpenData}}
-
-\cvlistitem{\fullcite{bailo_Breaking_2025} {\aiOpenAccess} \href{https://doi.org/10.7910/DVN/MNHJTQ}{\aiOpenData}}
-
-\cvlistitem{\fullcite{stilinovic_Creative_2025} {\aiOpenAccess}}
-
-\cvlistitem{\fullcite{tian_Its_2025} {\aiOpenAccess} \href{https://github.com/ltian678/ic-mamba}{\aiOpenData} [\href{https://ic-mamba.behavioral-ds.science/}{Dashboard}]}
-
-\cvlistitem{\fullcite{tronconi_Other_2025} {\aiOpenAccess} 
- \href{https://doi.org/10.7910/DVN/95F881}{\aiOpenData}}
-
-\cvlistitem{\fullcite{johnsLabellingShadowBans2024} {\aiOpenAccess} 
- \href{https://doi.org/10.7910/DVN/A9RNBS}{\aiOpenData}}
-
-\cvlistitem{\fullcite{bailo_riding_2023} {\aiOpenAccess} 
- \href{https://doi.org/10.7910/DVN/QN1LUZ}{\aiOpenData}}
-
-\cvlistitem{\fullcite{kong_slipping_2022} {\aiOpenAccess}}
-
-\cvlistitem{\fullcite{bailo_no_2021} 
- \href{https://doi.org/10.7910/DVN/8HLD6E}{\aiOpenData}}
-
-\cvlistitem{\fullcite{bailo_institutional_2021} {\aiOpenAccess} 
- \href{https://doi.org/10.7910/DVN/TAMMBF}{\aiOpenData}}
-
-\cvlistitem{\fullcite{abbondanza_electoral_2018} 
- \href{https://doi.org/10.7910/DVN/YM7IWP}{\aiOpenData}}
-
-\cvlistitem{\fullcite{bailo_hybrid_2017} 
- \href{https://doi.org/10.7910/DVN/MIU9K3}{\aiOpenData}}
-
-\cvlistitem{\fullcite{vromen_everyday_2016} 
- \href{https://doi.org/10.3886/ICPSR37023.v1}{\aiOpenData}}
-
-\cvlistitem{\fullcite{bailo_mapping_2015}}
-
-\subsubsection{Book}
-
-\cvlistitem{\fullcite{bailo_online_2020}}
-
-\subsubsection{Book sections}
-
-\cvlistitem{\fullcite{sengulTwentyfirstCenturyPopulism2023}}
-
-\cvlistitem{\fullcite{bailo_social_2023b}}
-
-\subsubsection{Research reports}
-
-\cvlistitem{\fullcite{flew_safe_2023}}
-
-\cvlistitem{\fullcite{goggin_digital_2017}}
-
-\cvlistitem{\fullcite{jilani_aciar_2013}}
-
-\subsubsection{PhD thesis}
-
-\cvlistitem{\fullcite{bailo_citizen_2017}}
-
-\subsubsection{News articles}
-
-\cvlistitem{\fullcite{bailo_Digital_2025}}
-
-\cvlistitem{\fullcite{stilinovic_AI_2025}}
-
-\cvlistitem{\fullcite{bailoConcernsDeepSeekShould2025}}
-
-\cvlistitem{\fullcite{johnsMetaJustClosed2024}}
-
-\cvlistitem{\fullcite{johns_Conspiracy_2024}}
-
-\cvlistitem{\fullcite{bailo_social_2023a}}
-
-\cvlistitem{\fullcite{bailo_ignore_2022}}
-
-\cvlistitem{\fullcite{meese_its_2021}}
-
-\cvlistitem{\fullcite{bailo_would_2021}}
-
-\cvlistitem{\fullcite{bailo_il_2019-1}}
-
-\cvlistitem{\fullcite{bailo_il_2019-1}}
-
-\subsection{External grants}
-
-\cvline{Jul 2023}{\emph{Commonwealth of Australia (through the Department of Defence) and the NSW government}. AU\$500,000}. Investigators: Marian-Andrei Rizoiu, Amelia Johns (University of Technology Sydney); Julian Droogan, Jennifer Hunt (Macquarie University); Charles Hawksley (University of Wollongong); Francesco Bailo (University of Sydney).
+\cvline{Jul 2023}{\emph{Commonwealth of Australia (through the Department of Defence) and the NSW government}. AU\$500,000. Investigators: Marian-Andrei Rizoiu, Amelia Johns (University of Technology Sydney); Julian Droogan, Jennifer Hunt (Macquarie University); Charles Hawksley (University of Wollongong); Francesco Bailo (University of Sydney).}
 
 \cvline{Sep 2019}{\emph{Facebook Content Policy Research
     Award}. US\$60,000. Awarded by Facebook. Investigators: Dr Amelia
   Johns (University of Technology Sydney), Dr Francesco Bailo (University of Technology Sydney) and Dr Marian-Andrei Rizoiu (University of Technology Sydney).}
 
-\subsection{Internal grants}
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Internal grants}
+
+\vspace{.5em}
 
 \cvline{March 2025}{\emph{Ignition grant}. AU\$45,000. Awarded by the Sydney Southeast Asia Centre, the University of Sydney. Investigators: Jonathon Hutchinson, Micah Goldwater, Lê Triệu Thanh.}
 
@@ -395,55 +203,193 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 \cvline{Jul 2024}{\emph{Research Funding Scheme - Project Funding}. AU\$3,000. Awarded by the School of Social and Political Sciences, the University of Sydney. Lead Investigator: Francesco Bailo.}
 
 \cvline{May 2021}{\emph{Cross-Faculty Collaboration
-    Scheme}. AU\$20,000. Awarded by the University of Technology Sydney. Chief Investigators: Dr Marian-Andrei Rizoiu (University of Technology Sydney), Dr Amelia Johns (University of Technology Sydney), Dr Francesco Bailo (University of Technology Sydney), Dr Anne Kruger (First Draft, University of Technology Sydney), Prof Derek Wilding and Monica Attard (Centre for Media Transition, University of Technology Sydney).}
+    Scheme}. AU\$20,000. Awarded by the University of Technology Sydney. Chief Investigators: Marian-Andrei Rizoiu (University of Technology Sydney), Amelia Johns (University of Technology Sydney), Francesco Bailo (University of Technology Sydney), Anne Kruger (First Draft, University of Technology Sydney), Derek Wilding and Monica Attard (Centre for Media Transition, University of Technology Sydney).}
 
 \cvline{Aug 2019}{\emph{Early Career Research Grant}. AU\$15,000. Awarded by the Faculty of Arts and Social Sciences (University of Technology Sydney). }
 
-\cvline{Sep 2019}{\emph{Cross-faculty Collaboration Scheme}. AU\$20,000. Awarded by the Faculty of Engineering and Information Technology (University of Technology Sydney). Chief Investigators: Dr Francesco Bailo (University of Technology Sydney), Dr Amelia Johns (UTS) and Dr Marian-Andrei Rizoiu (the University of Technology Sydney).}
+\cvline{Sep 2019}{\emph{Cross-faculty Collaboration Scheme}. AU\$20,000. Awarded by the Faculty of Engineering and Information Technology (University of Technology Sydney). Chief Investigators: Francesco Bailo (University of Technology Sydney), Amelia Johns (UTS) and Marian-Andrei Rizoiu (the University of Technology Sydney).}
 
 \cvline{May 2018}{\emph{Research Support Scheme}. AU\$2,500. Awarded by the School of Literature, Art and Media (the University of Sydney).}	
+  
+\vspace{.5em}
 
-\section{Media appearances}
+\subsection{\hspace{-2.5cm}Publications}
 
-\cvlistitem{\fullcite{mackey_Digital_2025}}
+\vspace{.5em}
 
-\cvlistitem{\fullcite{gugole_Niente_2025}}
+\subsubsection{\hspace{-2.5cm}Articles published in peer-review journals or peer-reviewed conference proceedings}
 
-\cvlistitem{\fullcite{fossatiDivietoDiAccesso2024}}
+\vspace{.5em}
 
-\cvlistitem{\fullcite{obrienABCNewsJoe2024}}
+\begin{enumerate}
 
-\cvlistitem{\fullcite{obrienABCNewsHour2024}}
+\item \fullcite{marollaAffordingFragmentedAudiences2025} {\aiOpenAccess} \href{https://doi.org/10.7910/DVN/MHLAOT}{\aiOpenData}
 
-\cvlistitem{\fullcite{evershed_News_2024}}
+\item \fullcite{bailo_Breaking_2025} {\aiOpenAccess} \href{https://doi.org/10.7910/DVN/MNHJTQ}{\aiOpenData}
 
-\cvlistitem{\fullcite{gugoleRelazioniTraItalia2024}}
+\item \fullcite{stilinovic_Creative_2025} {\aiOpenAccess}
 
-\cvlistitem{\fullcite{corsetti_could_2022}}
+\item \fullcite{tian_Its_2025} {\aiOpenAccess} \href{https://github.com/ltian678/ic-mamba}{\aiOpenData} [\href{https://ic-mamba.behavioral-ds.science/}{Dashboard}]
 
-\cvlistitem{\fullcite{bogle_one_2022}}
+\item \fullcite{tronconi_Other_2025} {\aiOpenAccess} 
+ \href{https://doi.org/10.7910/DVN/95F881}{\aiOpenData}
 
-\cvlistitem{\fullcite{nagata_tiktokers_2022}}
+\item \fullcite{johnsLabellingShadowBans2024} {\aiOpenAccess} 
+ \href{https://doi.org/10.7910/DVN/A9RNBS}{\aiOpenData}
 
-\cvlistitem{\fullcite{lin_tiktoks_2022}}
+\item \fullcite{bailo_riding_2023} {\aiOpenAccess} 
+ \href{https://doi.org/10.7910/DVN/QN1LUZ}{\aiOpenData}
 
-\cvlistitem{\fullcite{contreras_i_2021}}
+\item \fullcite{kong_slipping_2022} {\aiOpenAccess}
 
-\cvlistitem{\fullcite{oneil_who_2021}}
+\item \fullcite{bailo_no_2021} 
+ \href{https://doi.org/10.7910/DVN/8HLD6E}{\aiOpenData}
 
-\cvlistitem{\fullcite{purtill_facebook_2021}}
+\item \fullcite{bailo_institutional_2021} {\aiOpenAccess} 
+ \href{https://doi.org/10.7910/DVN/TAMMBF}{\aiOpenData}
 
-\cvlistitem{\fullcite{walden_disgusted_2021}}
+\item \fullcite{abbondanza_electoral_2018} 
+ \href{https://doi.org/10.7910/DVN/YM7IWP}{\aiOpenData}
 
-\cvlistitem{\fullcite{knaus_how_2021}}
+\item \fullcite{bailo_hybrid_2017} 
+ \href{https://doi.org/10.7910/DVN/MIU9K3}{\aiOpenData}
 
-\cvlistitem{\fullcite{megalokonomos_what_2020}}
+\item \fullcite{vromen_everyday_2016} 
+ \href{https://doi.org/10.3886/ICPSR37023.v1}{\aiOpenData}
 
-\cvlistitem{\fullcite{gillespie_pastel_2020}}
+\item \fullcite{bailo_mapping_2015}
 
-\cvlistitem{\fullcite{moffitt_populism_2018}}
+\end{enumerate}
 
-\section{Presentations}
+\vspace{.5em}
+
+\subsubsection{\hspace{-2.5cm}Pre-print}
+
+\vspace{.5em}
+
+\begin{enumerate}
+
+\item \fullcite{ashaniamarasinghe_Mapping_2025}
+
+\end{enumerate}
+
+\subsubsection{\hspace{-2.5cm}Books}
+
+\begin{enumerate}
+
+\item \fullcite{bailo_How_2026}
+
+\item \fullcite{bailo_online_2020}
+
+\end{enumerate}
+
+\vspace{.5em}
+
+\subsubsection{\hspace{-2.5cm}Book sections}
+
+\vspace{.5em}
+
+\begin{enumerate}
+
+\item \fullcite{sengulTwentyfirstCenturyPopulism2023}
+
+\item \fullcite{bailo_social_2023b}
+
+\end{enumerate}
+
+\vspace{.5em}
+
+\subsubsection{\hspace{-2.5cm}Research reports and public submissions}
+
+\vspace{.5em}
+
+\begin{enumerate}
+
+\item \fullcite{weatherallSubmissionProductivityCommission2025}
+
+\item \fullcite{flew_safe_2023}
+
+\item \fullcite{goggin_digital_2017}
+
+\item \fullcite{jilani_aciar_2013}
+     
+\end{enumerate}
+
+\vspace{.5em}
+
+\subsubsection{\hspace{-2.5cm}News articles}
+
+\vspace{.5em}
+
+\begin{enumerate}
+
+\item \fullcite{bailo_Digital_2025}
+
+\item \fullcite{stilinovic_AI_2025}
+
+\item \fullcite{bailoConcernsDeepSeekShould2025}
+
+\item \fullcite{johnsMetaJustClosed2024}
+
+\item \fullcite{johns_Conspiracy_2024}
+
+\item \fullcite{bailo_social_2023a}
+
+\item \fullcite{bailo_ignore_2022}
+
+\item \fullcite{meese_its_2021}
+
+\item \fullcite{bailo_would_2021}
+
+\item \fullcite{bailo_il_2019-1}
+
+\item \fullcite{bailo_il_2019-1}
+
+\end{enumerate}
+
+\vspace{.5em}
+
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Presentations}
+
+\vspace{.5em}
+
+\cventry
+{9 October 2025}
+{Panel discussion with Fiona White and Micah Goldwater}
+{}
+{University of Sydney}
+{}
+{
+\begin{itemize} % Description(s)
+\item {Panel title: `Psychology of Polarisation'. \href{https://www.sydney.edu.au/science/news-and-events/events/divided-or-untied.html}{\faLink}}
+\end{itemize}
+}
+
+\cventry
+{10 October 2025}
+{Panel discussion with and Martin Jolly and Mark Ledbury}
+{2025 Research Events Series}
+{University of Sydney}
+{}
+{
+\begin{itemize} % Description(s)
+\item {Event Title: `Believing what you see: Trust and vision from the French Revolution to Generative AI'.}
+\end{itemize}
+}
+
+\cventry
+{4 August 2025}
+{Panel Discussion with Glenn Geers and Palvi Bothra and  McGinn Eamon}
+{Institute of Transport and Logistics Studies, NSW Transport}
+{Sydney, Australia}
+{}
+{
+\begin{itemize} % Description(s)
+\item {Event Title: `AI for Transport Planners: An Introduction'.}
+\end{itemize}
+}
 
 \cventry
 {17 January 2025}
@@ -453,7 +399,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Collaborative Use of Wikibase for Interdisciplinary Mixed-Methods Research'.}
+        \item {Presentation title: `Collaborative Use of Wikibase for Interdisciplinary Mixed-Methods Research'. \href{https://fraba.github.io/presentation/2025-CS2ITALY/wikibase}{\faLink}}
       \end{itemize}
     }
 
@@ -465,7 +411,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Quantifying Perceptions of Violence on YouTube for Near Real-Time Sensing of Vulnerable Communities and Mitigating Misinformation'.}
+        \item {Presentation title: `Quantifying Perceptions of Violence on YouTube for Near Real-Time Sensing of Vulnerable Communities and Mitigating Misinformation'. \href{https://fraba.github.io/presentation/2025-CS2ITALY/youtube}{\faLink}}
       \end{itemize}
     }
 
@@ -477,7 +423,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Breaking out of Legacy Mobilization Networks: How the Internet Reaches and Activates the Politically Disengaged'.}
+        \item {Presentation title: `Breaking out of Legacy Mobilization Networks: How the Internet Reaches and Activates the Politically Disengaged'. \href{https://fraba.github.io/presentation/2024-WSU}{\faLink}}
       \end{itemize}
     }
 
@@ -489,7 +435,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Using YouTube Comments to Measure the Geographic Spread of Violence'.}
+        \item {Presentation title: `Using YouTube Comments to Measure the Geographic Spread of Violence'. \href{https://fraba.github.io/presentation/2024-DIN}{\faLink}}
       \end{itemize}
     }
 
@@ -501,7 +447,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Affording fragmented audiences: Multi-platform deliberation within the Five Star Movement'.}
+        \item {Presentation title: `Affording fragmented audiences: Multi-platform deliberation within the Five Star Movement'. \href{https://www.icahdq.org/mpage/ICA24-program}{\faLink} \href{https://fraba.github.io/presentation/2024-ICA}{\faLink}}
       \end{itemize}
     }
 
@@ -513,7 +459,19 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Levelling at the margin: Personal networks, social capital and the Internet in the mobilisation of the Five Star Movement'.}
+        \item {Presentation title: `Levelling at the margin: Personal networks, social capital and the Internet in the mobilisation of the Five Star Movement'. \href{https://asqps.org.au/2023-annual-conference-brisbane/}{\faLink} \href{https://fraba.github.io/presentation/2023-ASQPS/}{\faLink}}
+      \end{itemize}
+    }
+
+\cventry 
+{30 November 2023}
+{Presenter with Giulia Sandri and Anontella Seddone (paper)}
+{2023 Australian Political Studies (APSA) Conference}
+{Sydney, Australia}
+{}
+      {
+      \begin{itemize} % Description(s)
+        \item {Presentation title: `Online and offline social capital as catalyst for political mobilisation: The case of digital native political parties'. \href{https://auspsa.org.au/apsa2023/}{\faLink} \href{https://fraba.github.io/presentation/2023-APSA/}{\faLink}}
       \end{itemize}
     }
 
@@ -526,7 +484,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Measuring information disorder'.}
+        \item {Presentation title: `Measuring information disorder'. \href{https://www.ansna.org.au/asnac-2023}{\faLink} \href{https://fraba.github.io/presentation/2023-ASNAC/}{\faLink}}
       \end{itemize}
     }
 
@@ -538,7 +496,7 @@ Sydney. https://handbook.uts.edu.au/subjects/details/570002}
 {}
       {
       \begin{itemize} % Description(s)
-        \item {Presentation title: `Online and offline social capital as catalyst for political mobilisation: the case of digital native political parties'.}
+        \item {Presentation title: `Online and offline social capital as catalyst for political mobilisation: the case of digital native political parties'. \href{https://ecpr.eu/Events/214}{\faLink} \href{https://ecpr.eu/Events/Event/PaperDetails/68582}{\faLink} \href{https://fraba.github.io/presentation/2023-ECPR}{\faLink}}
       \end{itemize}
     }
 
@@ -931,6 +889,214 @@ Electoral Success of the Five Star Movement (2005-2018)'.}
       \end{itemize}
     }
 
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Media appearances}
+
+\vspace{.5em}
+
+\begin{enumerate}
+
+\item \fullcite{gugole_Tutti_2025}
+
+\item \fullcite{czelenevillanueva_Should_2025}
+
+\item \fullcite{campbell_Armies_2025}
+
+\item \fullcite{mackey_Digital_2025}
+
+\item \fullcite{gugole_Niente_2025}
+
+\item \fullcite{fossatiDivietoDiAccesso2024}
+
+\item \fullcite{obrienABCNewsJoe2024}
+
+\item \fullcite{obrienABCNewsHour2024}
+
+\item \fullcite{evershed_News_2024}
+
+\item \fullcite{gugoleRelazioniTraItalia2024}
+
+\item \fullcite{corsetti_could_2022}
+
+\item \fullcite{bogle_one_2022}
+
+\item \fullcite{nagata_tiktokers_2022}
+
+\item \fullcite{lin_tiktoks_2022}
+
+\item \fullcite{contreras_i_2021}
+
+\item \fullcite{oneil_who_2021}
+
+\item \fullcite{purtill_facebook_2021}
+
+\item \fullcite{walden_disgusted_2021}
+
+\item \fullcite{knaus_how_2021}
+
+\item \fullcite{megalokonomos_what_2020}
+
+\item \fullcite{gillespie_pastel_2020}
+
+\item \fullcite{moffitt_populism_2018}
+
+\end{enumerate}
+
+\section{Teaching}
+
+\begin{boxH}
+\begin{itemize}
+\item I have \textbf{11 years of university teaching experience} in Australia, with proven expertise in making \textbf{computational social science methods} accessible to diverse audiences across undergraduate, postgraduate, PhD, and professional development contexts.
+\item My teaching portfolio encompasses the full spectrum of \textbf{quantitative and computational method}s: \textbf{statistical and data analysis}, \textbf{research design}, \textbf{digital methods}, \textbf{data visualisation} (R but also JASP and Tableau), \textbf{network analysis}, \textbf{natural language processing}, and programming (\textbf{Python} and \textbf{R}), delivered through innovative pedagogical approaches including \textbf{Jupyter Notebooks} and active \textbf{learning strategies}.
+\item I have extensive experience \textbf{coordinating large courses} (up to 300 students), \textbf{recruiting and training teaching assistants}, and implementing technology-enhanced learning that has resulted in recognition through the\textbf{ 2023 Teaching Innovation Award} and the highest year-on-year increase in student satisfaction within my School.
+\item I hold the Italian scientific qualification ("\textbf{Abilitazione Scientifica Nazionale}") as Associate Professor for the disciplinary fields of \textbf{14/A2 - Political Science} and \textbf{14/C2 - Sociology of Culture and Communication} (valid until 03/10/2033), demonstrating readiness for Associate Professor responsibilities in the Italian higher education system and commitment to European academic integration.
+\end{itemize}
+\end{boxH}
+
+\subsection{\hspace{-2.5cm}Undergraduate course coordinator}
+
+\vspace{.5em}
+
+\cventry{2023, 2024, 2025}{SSPS4102 Data Analytics in the Social Sciences (with R) \href{https://www.sydney.edu.au/units/SSPS4102/2025-S1C-ND-CC}{\faLink}}{Discipline of Government and International Relations, School of Social and Political Sciences}{The University of Sydney }{}{Undergraduate course teaching statistical concepts, quantitative methods, and R programming for social science research, covering data visualisation, pattern discovery, data analysis techniques, and practical coding skills for working with diverse data types.}
+
+\cventry{2025}{GOVT3901 Digital Politics \href{https://www.sydney.edu.au/units/GOVT3901/2025-S1C-ND-CC}{\faLink}}{Discipline of Government and International Relations, School of Social and Political Sciences}{The University of Sydney}{}{Undergraduate course examining how digital platforms and information and communications technologies reshape political power, with focus on platform politics, digital activism, state surveillance, online mobilisation, and the democratising versus authoritarian potentials of digital technologies across different political regimes through global and local case studies.}
+
+\cventry{2021, 2022}{52685 Working with Data and Code}{School of Communication}{University of Technology Sydney}{}{}
+
+\cventry{2022}{52682 Digital Media Metrics}{School of Communication}{University of Technology
+  Sydney}{}{}
+
+  \cventry{2021}{54061 Digital Media: Marketing, Metrics and Data}{School of Communication}{University of Technology
+  Sydney}{}{}
+
+\cventry{2019, 2020}{54005 Digital Media Industries}{School
+  of Communication}{University of Technology Sydney}{}{}
+
+\vspace{.5em}
+   
+\subsection{\hspace{-2.5cm}Postgraduate course coordinator}
+
+\vspace{.5em}
+
+\cventry{2024, 2025}{SSPS6006 Data Analytics for Social Research \href{https://www.sydney.edu.au/units/SSPS6006/2025-S1C-ND-CC}{\faLink}}{School of Social and Political Sciences}{The University of Sydney}{}{Postgraduate course developing advanced R programming skills for social science data analysis, covering data manipulation and cleaning, data visualisation, exploratory data analysis, pattern discovery, statistical inference, linear regression, and causal analysis fundamentals through hands-on coding exercises with diverse social science datasets.}
+
+\cventry{2023, 2024, 2025}{GOVT6139 Research Design \href{https://www.sydney.edu.au/units/GOVT6139/2025-S2C-ND-CC}{\faLink}}{Discipline of Government and International Relations, School of Social and Political Sciences}{The University of Sydney.}{}{Postgraduate methodology and methods course integrating quantitative and qualitative approaches, covering survey design, interviews, statistical analysis, content analysis, and research ethics through practical project-based assessment.}
+
+\cventry{2022}{570002 Application Implementation with Microsoft Dynamics}{School of Communication}{University of Technology
+Sydney}{}{}
+
+\cventry{2018}{MECO6913 Public Opinion, Policy and the Public Sphere}{Department of Media and Communications, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Workshops}
+
+\vspace{.5em}
+
+\cventry{Jul 2022}{(The Art of) Text Mining and Analysis \href{https://fraba.github.io/2022-ANZCA-workshop-The-art-of-text-analysis/}{\faLink}}{Winter School Training Session - ANZCA}{University of Canberra}{}{Professional development workshop for academic and industry researchers covering data visualization with Tableau (including JSON data import and text analysis functions), introduction to R programming and the tidyverse ecosystem, text mining workflows (data import, tidying, modeling, and presentation), document-term matrices, and topic modeling using Structural Topic Models (STM), with hands-on exercises analyzing literary texts and social media data.}
+
+\cventry{Jul 2021}{How to do Social Media Data Analysis Using Tableau (Honours)}{School of Communication}{}{}{University of Technology Sydney}
+
+\cventry{Dec 2018}{Topic Models in R \href{https://digital-methods-sydney.github.io/ws-201812/}{\faLink}}{DH Downunder 2018 Summer School}{The University of Sydney}{}{Professional development workshop on computational text analysis using R, covering data import from multiple sources (PDFs, HTML, XML, APIs), text data tidying with tidyverse and tidytext packages, document-term matrices, and implementation of Structural Topic Models (STM) for discovering latent thematic patterns in textual data, with hands-on exercises analyzing literary texts and web-scraped content.}
+
+\cventry{Jun 2018}{Digital Methods Workshop: Social Network Analysis, Twitter Data Collection, Text Analysis and the R Software \href{https://digital-methods-sydney.github.io/ws-201806/}{\faLink}}{Department of Media and Communications, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+
+\cventry{Nov - Dec 2016}{Digital Media Methods: Applications of R Software and RStudio to Social Research \href{{https://fraba.github.io/digital_media_methods_sydney/}}{\faLink}}{Department of Media and Communications, Faculty of Arts and Social Sciences}{The University of Sydney}{}{Two-day professional development workshop introducing R programming fundamentals and social media data collection: Day 1 covered R/RStudio basics, data manipulation with dplyr, data visualization with ggplot2, and text mining with tm package using Twitter data from the \#smachedavo protest; Day 2 focused on API authentication, live Twitter data collection using twitteR package, for-loops and control flow structures, and automated data scraping workflows.}
+
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Guest lecturer}
+
+\vspace{.5em}
+
+\cventry{2025}{GOVT2901 Contemporary Issues in Politics and International Relations II}{Discipline of Government and International Relations, School of Social and Political Sciences}{University of Sydney}{}{}
+
+\cventry{2025}{GOVT6150 Challenges of Democratic Politics}{Discipline of Government and International Relations, School of Social and Political Sciences}{University of Sydney}{}{}
+
+\cventry{2025}{SSPS4402 Philosophy of Social Science Research}{School of Social and Political Sciences}{University of Sydney}{}{}
+
+\cventry{2023, 2024, 2025}{ARIN3620 Researching Digital Cultures}{Discipline of Media and Communications, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\cventry{2023, 2024, 2025}{MECO4114 Research Methods}{Discipline of Media and Communications, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\cventry{2024}{GOVT2901 Contemporary Issues in Political and International Relations II}{Discipline of Government and International Relations, School of Social and Political Sciences}{The University of Sydney}{}{}
+
+\cventry{2022}{52673 Political Ideas and Change}{School of Communication}{University of Technology Sydney}{}{}
+
+\cventry{2021}{52673 Political Ideas and Change}{School of Communication}{University of Technology Sydney}{}{}
+
+\cventry{2018}{LNGS2628 Digital Tools for the Humanities}{Department of Linguistics, Faculty of Arts and Social Sciences}{University of Sydney}{}{}
+
+\cventry{2017}{GOVT2991 Political analysis}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\cventry{2017}{GOVT1104 Introduction to Political Science}{}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{The University of Sydney}{}
+
+\cventry{Sep 2017}{GOVT3901 Digital Politics}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\vspace{.5em}
+
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Supervision of research students}
+
+\vspace{.5em}
+
+\cvline{}{I successfully completed the supervision of \textbf{one PhD student}, \textbf{four Honours students} and \textbf{three Capstone students}. I am currently supervising \textbf{six PhD students}, \textbf{two Honours students}, and \textbf{two Capstone students}.}
+
+\vspace{.5em}
+
+\subsection{\hspace{-2.5cm}Workshops facilitated as director of the \textit{Computational Social Science Lab}}
+
+\vspace{.5em}
+
+\cventry{Sep 2025}{Introduction to NVivo: 90-Minute Hands-On Workshop}{Workshop session run by Kate Scott (University of Sydney)}{}{}{}
+
+\cventry{Aug 2025}{Explore, Analyse, Discover: Harness LDaCa Tools for Text Analysis}{Workshop Session run by Chao Sun and Senhui Guo (Sydney Informatics Hub)}{}{}{}
+
+\cventry{Aug 2025}{Using YouTube Data to Measure Online Harassment in Canadian Politics}{Workshop Session run by Inessa De Angelis (University of Toronto)}{}{}{}
+
+\cventry{Aug 2025}{Life Beyond Twitter: Non-Traditional Data for Computational Social Sciences}{Workshop Session run by Ingmar Weber (Saarland University)}{}{}{}
+
+\cventry{Jun 2025}{Getting started with Natural Language Processing}{Workshop Session run by Rohan Alexander (University of Toronto)}{}{}{}
+
+\subsection{\hspace{-2.5cm}Teaching assistant}
+
+\vspace{.5em}
+
+\cventry{2019, 2020, 2021}{54060 Understanding Digital Audiences}{School of Communication}{University of Technology Sydney}{}{}
+
+\cventry{2017}{GOVT2991 Political Analysis}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{University of Sydney}{}{}
+
+\cventry{2017}{GOVT1104 Introduction to Political Science}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{University of Sydney}{}{}
+
+\cventry{2014}{GOVT2111 Human Rights and Australian Politics}{Department of Government and International Relations, Faculty of Arts and Social Sciences}{The University of Sydney}{}{}
+
+\section{Awards and prizes}
+
+\cvline{Jul 2024}{\textbf{Commendations for Teaching Excellence}. Awarded by the School of Social and Political Sciences at the University of Sydney.}
+
+\cvline{Nov 2023}{\textbf{Teaching Award (Teaching Innovation)}. Awarded by the Faculty of Arts and Social Sciences at the University of Sydney.}
+
+\cvline{Sep 2018}{\textbf{The Internet, Policy \& Politics Conference Best
+Paper Prize}. Awarded by the Oxford Internet Institute of the
+University of Oxford.}
+
+\cvline{Mar 2015}{\textbf{Berlin Doctoral Fellowship}. Awarded by the
+  Faculty of Arts and Social Sciences at the University of Sydney}.
+
+\cvline{May 2013}{\textbf{Full PhD Scholarship - Australian Postgraduate
+    Award}. Awarded in by the University of Sydney.}
+
+\cvline{2011}{\textbf{Top 3\% Award}. Awarded by Maastricht University}.
+
+\cvline{2005}{\textbf{SEN Coimbra Group Grant}. Awarded by the
+  University of Pavia}.
+
+\cvline{2003}{\textbf{Erasmus Scholarship}. Awarded by the University of
+  Turin}.
+
 \section{Skills}
 
   \cvline
@@ -947,7 +1113,7 @@ Electoral Success of the Five Star Movement (2005-2018)'.}
 
   \cvline
     {Software} % Category
-    {RStudio, Tableau, \textsc{Qgis}, Linux, OpenStack (for cloud computing), \textsc{Spss}, OpenRefine, protégé.} 
+    {RStudio, JASP, NVivo, Tableau, \textsc{QGis}, Linux, OpenStack (for cloud computing), \textsc{Spss}, OpenRefine, protégé.} 
 
   \cvline
     {Database} % Category
@@ -955,7 +1121,7 @@ Electoral Success of the Five Star Movement (2005-2018)'.}
 
   \cvline
     {Web} % Category
-    {Wikibase, WordPress, D3.js, R Shiny.} % Skills
+    {MediaWiki, Wikibase, WordPress, R Shiny.} % Skills
 
 \end{document}
 % Local Variables:
