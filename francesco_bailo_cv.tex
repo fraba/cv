@@ -37,7 +37,9 @@
 \usepackage{academicons}
 \usepackage{fontawesome5}
 
-\usepackage[style=apa,backend=biber]{biblatex}
+\usepackage[style=apa,backend=biber,extradate=false]{biblatex}
+
+\DeclareFieldFormat{extradate}{}
 
 \addbibresource{francesco_bailo_cv.bib}
 
@@ -305,7 +307,7 @@ I have \textbf{five years of applied research and program management experience 
 
 \begin{enumerate}
 
-\item \fullcite{bailo_Submission_2005}
+\item \fullcite{bailo_Submission_2025}
 
 \item \fullcite{weatherallSubmissionProductivityCommission2025}
 
@@ -324,6 +326,8 @@ I have \textbf{five years of applied research and program management experience 
 \vspace{.5em}
 
 \begin{enumerate}
+
+\item \fullcite{bailoHowCanUsers2025}
 
 \item \fullcite{bailo_Digital_2025}
 
