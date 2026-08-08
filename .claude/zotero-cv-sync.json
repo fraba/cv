@@ -1,0 +1,18 @@
+{
+  "user_id": "1127234",
+  "collections": [
+    { "key": "D875BVLH", "section": "Peer-reviewed" },
+    { "key": "ZS3JA2MY", "section": "Books" },
+    { "key": "7RZXY9NH", "section": "Book sections" },
+    { "key": "ERVQDLKJ", "section": "Research report" },
+    { "key": "G3JSTCMW", "section": "News articles" },
+    { "key": "WV9BRA2D", "section": "Media appearances" },
+    { "key": "FLNATXSL", "section": "Presentation" },
+    { "key": "75Y5AZ9G", "section": "Thesis" },
+    { "key": "ZZ27UTBI", "section": "Preprint" }
+  ],
+  "notes": [
+    "Preprint items are dropped from the CV once the peer-reviewed version is published (confirmed by Francesco 2026-08-07). scripts/zotero_sync.py flags likely-superseded preprints via fuzzy title match against the Peer-reviewed collection and existing .bib entries — always confirm with Francesco before dropping one, per his explicit 'if in doubt, ask' instruction.",
+    "Thesis: no established placement in the CV yet as of 2026-08-07 (no thesis entry currently appears in francesco_bailo_cv.tex/.bib). Ask Francesco where/whether to add it the first time an item shows up here."
+  ]
+}
